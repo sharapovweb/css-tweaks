@@ -1,0 +1,88 @@
+.cNumber-input-group {
+  display: inline-block;
+  position: relative;
+}
+
+input.cNumber-input::-webkit-inner-spin-button,
+input.cNumber-input::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.cNumber-input {
+  -moz-appearance: textfield;
+  height: 36px;
+  padding: 0 25px 0 5px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input.cNumber-input.form-control {
+  padding: 6px 30px 6px 12px;
+}
+
+.cNumber-nav input.cNumber-input {
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid #eee;
+}
+
+input.cNumber-input:focus {
+  outline: 0;
+}
+
+.cNumber-nav {
+  border-left: 1px solid #ccc;
+  height: 34px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 21px;
+}
+
+.cNumber-btn {
+  position: relative;
+  cursor: pointer;
+  width: 21px;
+  text-align: center;
+  color: #333;
+  font: 15px/1em "Trebuchet MS", Helvetica, sans-serif !important;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  right: -21px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cNumber-btn.cNumber-btn-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cNumber-btn.cNumber-btn-down {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+}
+
+.cNumber-btn.cNumber-btn-up:hover,
+.cNumber-btn.cNumber-btn-down:hover {
+  background: #E0E0E0;
+}
