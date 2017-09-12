@@ -1,88 +1,105 @@
-.cNumber-input-group {
-  display: inline-block;
-  position: relative;
+input.input-number {
+  -moz-appearance: textfield;
 }
-
-input.cNumber-input::-webkit-inner-spin-button,
-input.cNumber-input::-webkit-outer-spin-button
-{
+input.input-number::-webkit-inner-spin-button,
+input.input-number::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-input.cNumber-input {
-  -moz-appearance: textfield;
-  height: 36px;
-  padding: 0 25px 0 5px;
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-input.cNumber-input.form-control {
-  padding: 6px 30px 6px 12px;
-}
-
-.cNumber-nav input.cNumber-input {
-  width: 45px;
-  height: 42px;
-  line-height: 1.65;
-  float: left;
-  display: block;
+.input-group-lg>.input-group-addon.input-group-number-control,
+.input-group-sm>.input-group-addon.input-group-number-control,
+.input-group>.input-group-addon.input-group-number-control {
   padding: 0;
-  margin: 0;
-  padding-left: 20px;
-  border: 1px solid #eee;
+  line-height: 1;
+  font-size: 1em;
 }
-
-input.cNumber-input:focus {
-  outline: 0;
+.input-group-addon.input-group-number-control {
+  background-color: #cccccc;
 }
-
-.cNumber-nav {
-  border-left: 1px solid #ccc;
-  height: 34px;
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  width: 21px;
-}
-
-.cNumber-btn {
-  position: relative;
+.input-group-addon.input-group-number-control .btn-plus,
+.input-group-addon.input-group-number-control .btn-minus {
+  width: 26px;
   cursor: pointer;
-  width: 21px;
-  text-align: center;
-  color: #333;
-  font: 15px/1em "Trebuchet MS", Helvetica, sans-serif !important;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
+  padding: 1px 0 1px;
+  background: #fff;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
-  right: -21px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-
-.cNumber-btn.cNumber-btn-up {
-  position: absolute;
-  height: 50%;
-  top: 0;
-  border-bottom: 1px solid #ccc;
+.input-group-addon.input-group-number-control .btn-minus {
+  padding-top: 0;
 }
-
-.cNumber-btn.cNumber-btn-down {
-  position: absolute;
-  bottom: 0;
-  height: 50%;
+.input-group-addon.input-group-number-control .btn-plus {
+  margin-bottom: 1px;
 }
-
-.cNumber-btn.cNumber-btn-up:hover,
-.cNumber-btn.cNumber-btn-down:hover {
-  background: #E0E0E0;
+.input-group-addon.input-group-number-control .btn-plus:hover,
+.input-group-addon.input-group-number-control .btn-minus:hover {
+  background: #cccccc;
+}
+.input-group-sm>.input-group-addon.input-group-number-control>.btn-plus,
+.input-group-sm>.input-group-addon.input-group-number-control>.btn-minus,
+.input-group-addon.input-group-number-control.input-group-number-control-sm>.btn-plus,
+.input-group-addon.input-group-number-control.input-group-number-control-sm>.btn-minus{
+  display: inline-block;
+  padding: 7px 0;
+}
+.input-group-sm>.input-group-addon.input-group-number-control .btn-plus,
+.input-group-addon.input-group-number-control.input-group-number-control-sm>.btn-plus {
+  margin-right: 1px;
+  margin-bottom: 0;
+}
+.input-group-lg>.input-group-addon.input-group-number-control>.btn-plus,
+.input-group-lg>.input-group-addon.input-group-number-control>.btn-minus,
+.input-group-addon.input-group-number-control.input-group-number-control-lg>.btn-plus,
+.input-group-addon.input-group-number-control.input-group-number-control-lg>.btn-minus{
+  padding: 4px 0;
+}
+.input-group-lg>.input-group-addon.input-group-number-control .btn-minus,
+.input-group-addon.input-group-number-control.input-group-number-control-lg>.btn-minus {
+  margin-bottom: 0;
+  padding: 3px 0 4px;
+}
+.input-group>.input-group-addon.input-group-number-control,
+.input-group-addon.input-group-number-control.input-group-number-control {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.input-group>.input-group-addon.input-group-number-control>.btn-plus,
+.input-group-addon.input-group-number-control.input-group-number-control>.btn-plus {
+  border-top-right-radius: 4px;
+}
+.input-group>.input-group-addon.input-group-number-control>.btn-minus,
+.input-group-addon.input-group-number-control.input-group-number-control>.btn-minus {
+  border-bottom-right-radius: 4px;
+}
+.input-group-lg>.input-group-addon.input-group-number-control,
+.input-group-addon.input-group-number-control.input-group-number-control-lg {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.input-group-lg>.input-group-addon.input-group-number-control>.btn-plus,
+.input-group-addon.input-group-number-control.input-group-number-control-lg>.btn-plus {
+  border-top-right-radius: 6px;
+}
+.input-group-lg>.input-group-addon.input-group-number-control>.btn-minus,
+.input-group-addon.input-group-number-control.input-group-number-control-lg>.btn-minus {
+  border-bottom-right-radius: 6px;
+}
+.input-group-sm>.input-group-addon.input-group-number-control,
+.input-group-addon.input-group-number-control.input-group-number-control-sm,
+.input-group-sm>.input-group-addon.input-group-number-control>.btn-minus,
+.input-group-addon.input-group-number-control.input-group-number-control-sm>.btn-minus {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.input-group-sm>.input-group-addon.input-group-number-control>.btn-plus,
+.input-group-addon.input-group-number-control.input-group-number-control-sm>.btn-plus {
+  border-radius: 0;
 }
