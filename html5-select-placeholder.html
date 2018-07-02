@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<style type="text/css">
+  select:required:invalid {
+    color: #999;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: #000;
+  }
+</style>
+<select name="browsers" required>
+  <option value="" disabled selected>Choose a Browser</option>
+  <option value="chrome">CHROME</option>
+  <option value="safari">SAFARI</option>
+  <option value="opera">OPERA</option>
+</select>
+</body>
+</html>
